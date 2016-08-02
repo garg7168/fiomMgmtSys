@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>FilmManagement</display-name>
+  <servlet>
+  <servlet-name>ListOfAllActors</servlet-name>
+ 	<servlet-class>com.flp.fms.controller.ListOfAllActors</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>ListOfAllFilms</display-name>
+  	<servlet-name>ListOfAllFilms</servlet-name>
+  	<servlet-class>com.flp.fms.controller.ListOfAllFilms</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>ListSpecificFilm</display-name>
+  	<servlet-name>ListSpecificFilm</servlet-name>
+  	<servlet-class>com.flp.fms.controller.ListSpecificFilm</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>SpecificFilm</display-name>
+  	<servlet-name>SpecificFilm</servlet-name>
+  	<servlet-class>com.flp.fms.controller.SpecificFilm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ListOfAllActors</servlet-name>
+  	<url-pattern>/ListOfAllActors</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListOfAllFilms</servlet-name>
+  	<url-pattern>/ListOfAllFilms</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListSpecificFilm</servlet-name>
+  	<url-pattern>/ListSpecificFilm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SpecificFilm</servlet-name>
+  	<url-pattern>/SpecificFilm</url-pattern>
+  </servlet-mapping>
+ 
+ </web-app>
